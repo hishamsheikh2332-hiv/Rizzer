@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Editor Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family: Arial, sans-serif;
+      background:#0f0f0f;
+      color:#ffffff;
+      line-height:1.6;
+    }
+
+    a{
+      color:#00d4ff;
+      text-decoration:none;
+    }
+
+    header{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 20px;
+      background:linear-gradient(135deg,#111,#1f1f1f);
+    }
+
+    .hero{
+      max-width:1100px;
+      width:100%;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .hero-text h1{
+      font-size:3rem;
+      margin-bottom:15px;
+    }
+
+    .hero-text p{
+      color:#cfcfcf;
+      margin-bottom:25px;
+      font-size:1.1rem;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 24px;
+      background:#00d4ff;
+      color:#000;
+      border-radius:8px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#ffffff;
+    }
+
+    .hero-image{
+      display:flex;
+      justify-content:center;
+    }
+
+    .hero-image img{
+      width:320px;
+      height:320px;
+      object-fit:cover;
+      border-radius:20px;
+      border:4px solid #00d4ff;
+    }
+
+    section{
+      padding:80px 20px;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .section-title{
+      font-size:2rem;
+      margin-bottom:30px;
+      color:#00d4ff;
+    }
+
+    .about p{
+      color:#d0d0d0;
+      max-width:800px;
+    }
+
+    .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:20px;
+    }
+
+    .skill-card{
+      background:#1b1b1b;
+      padding:20px;
+      border-radius:12px;
+      text-align:center;
+      transition:0.3s;
+      border:1px solid #2b2b2b;
+    }
+
+    .skill-card:hover{
+      transform:translateY(-5px);
+      border-color:#00d4ff;
+    }
+
+    .experience-card,
+    .project-card{
+      background:#1b1b1b;
+      padding:25px;
+      border-radius:14px;
+      margin-bottom:20px;
+      border:1px solid #2b2b2b;
+    }
+
+    .experience-card h3,
+    .project-card h3{
+      margin-bottom:10px;
+    }
+
+    .experience-card p,
+    .project-card p{
+      color:#cfcfcf;
+    }
+
+    .projects-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+    }
+
+    .contact-box{
+      background:#1b1b1b;
+      padding:30px;
+      border-radius:14px;
+      text-align:center;
+    }
+
+    .contact-box p{
+      margin:10px 0;
+      color:#cfcfcf;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      color:#888;
+      border-top:1px solid #222;
+    }
+
+    @media(max-width:768px){
+      .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+
+      .hero-text h1{
+        font-size:2.4rem;
+      }
+
+      .hero-image img{
+        width:250px;
+        height:250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+
+      <div class="hero-text">
+        <h1>Hi, I'm Your Name</h1>
+        <p>
+          Creative Video Editor specializing in cinematic edits, reels, shorts,
+          YouTube content, transitions, color grading, and storytelling.
+          I turn raw footage into engaging visual experiences.
+        </p>
+
+        <a href="#contact" class="btn">Hire Me</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://via.placeholder.com/320" alt="Profile Photo">
+      </div>
+
+    </div>
+  </header>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+
+      <p>
+        I'm a passionate freelance video editor with experience creating
+        high-quality content for social media, YouTube, brands, and creators.
+        I focus on smooth transitions, motion graphics, storytelling,
+        sound design, and modern editing styles that capture attention.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">Adobe Premiere Pro</div>
+        <div class="skill-card">After Effects</div>
+        <div class="skill-card">Color Grading</div>
+        <div class="skill-card">Motion Graphics</div>
+        <div class="skill-card">YouTube Editing</div>
+        <div class="skill-card">Instagram Reels</div>
+        <div class="skill-card">Cinematic Editing</div>
+        <div class="skill-card">Sound Design</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="experience-card">
+        <h3>Freelance Video Editor</h3>
+        <p><strong>2023 - Present</strong></p>
+
+        <p>
+          Edited reels, shorts, gaming videos, and cinematic content for
+          creators and clients. Improved audience retention using fast-paced
+          editing and engaging storytelling techniques.
+        </p>
+      </div>
+
+      <div class="experience-card">
+        <h3>Social Media Content Editor</h3>
+        <p><strong>2022 - 2023</strong></p>
+
+        <p>
+          Created short-form viral content optimized for Instagram,
+          TikTok, and YouTube Shorts with modern transitions,
+          subtitles, and sound effects.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>Cinematic Travel Edit</h3>
+
+          <p>
+            A visually engaging travel montage featuring cinematic transitions,
+            color grading, and emotional storytelling.
+          </p>
+
+          <br>
+          <a href="#">Project Link</a>
+        </div>
+
+        <div class="project-card">
+          <h3>YouTube Gaming Highlights</h3>
+
+          <p>
+            Fast-paced gaming edits with effects, subtitles,
+            memes, and engaging cuts for audience retention.
+          </p>
+
+          <br>
+          <a href="#">Project Link</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Instagram Reel Campaign</h3>
+
+          <p>
+            Edited short-form content for brands with modern
+            motion graphics and trendy social media style.
+          </p>
+
+          <br>
+          <a href="#">Project Link</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-box">
+        <p>Email: yourname@email.com</p>
+        <p>Instagram: @yourhandle</p>
+        <p>YouTube: youtube.com/yourchannel</p>
+        <p>Portfolio Drive Link: yourlink.com</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name | Video Editor Portfolio</p>
+  </footer>
+
+</body>
+  </html>
